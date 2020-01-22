@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юлия Апрелева](https://up.htmlacademy.ru/htmlcss/27/user/1106389).
-* Наставник: `Елизавета Винокурова`(https://up.htmlacademy.ru/htmlcss/27/user/123355).
+* Наставник: [Елизавета Винокурова](https://up.htmlacademy.ru/htmlcss/27/user/123355).
 
 ---
 
