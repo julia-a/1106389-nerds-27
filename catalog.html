@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Дизайн-студия «Нёрдс» | Магазин готовых шаблонов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="main-navigation">
+
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <img class="logo__img" src="img/nerds-logo.png" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
+      </a>
+
+      <!-- Main menu -->       
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Клиенты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Магазин</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+
+      <!-- Cart -->
+      <ul class="cart">
+        <li class="cart__item">
+          <button class="button" type="button">Корзина</button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="title">Магазин готовых шаблонов</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Aside -->
+    <aside class="filter">
+      <!-- Здесь будет расчет стоимости -->
+
+      <!-- Форма выбора типа сетки -->
+      <fieldset class="grid">
+        <legend class="grid__name">Сетка:</legend>
+        <ul class="grid__list">
+          <li class="grid__item">
+            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </li>
+          <li class="grid__item">
+            <input type="radio" name="grid" id="fixed" value="fixed">
+            <label for="fixed">Фиксированная</label>
+          </li>
+          <li class="grid__item">
+            <input type="radio" name="grid" id="fluid" value="fluid">
+            <label for="fluid">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- Форма выбора особенностей макета -->
+      <fieldset class="features">
+        <legend class="features__name">Особенности:</legend>
+        <ul class="features__list">
+          <li class="features__item">
+            <input type="checkbox" name="features" id="slider" value="slider" checked>
+            <label for="slider">Слайдер</label>
+          </li>
+          <li class="features__item">
+            <input type="checkbox" name="features" id="advantages-block" value="advantages-block">
+            <label for="advantages-block">Блок преимуществ</label>
+          </li>
+          <li class="features__item">
+            <input type="checkbox" name="features" id="news" value="news">
+            <label for="news">Новости</label>
+          </li>
+          <li class="features__item">
+            <input type="checkbox" name="features" id="gallery" value="gallery">
+            <label for="gallery">Галерея</label>
+          </li>
+          <li class="features__item">
+            <input type="checkbox" name="features" id="cart" value="cart">
+            <label for="gallery">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button class="button button_grey" type="button">Показать</button>
+    </aside>
+
+    <!-- Catalog -->
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/sedona.jpg" alt="Скриншот сайта Sedona" width="360" height="576">
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/pink.jpg" alt="Скриншот сайта Pink App" width="360" height="576">
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/barbershop.jpg" alt="Скриншот сайта Barbershop" width="360" height="576">
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/mishka.jpg" alt="Скриншот сайта Mishka" width="360" height="576">
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576">
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__img" src="img/catalog/kvast.jpg" alt="Скриншот сайта Кваст" width="360" height="576">
+        </li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination__item"><a href="/">1</a></li>
+        <li class="pagination__item"><a href="#">2</a></li>
+        <li class="pagination__item"><a href="#">3</a></li>
+        <li class="pagination__item"><a href="#">Следующая</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="socials"> 
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a> 
+        </li>
+      </ul>
+      <div class="socials__info">
+        <p class="socials__text">Давайте дружить, это выгодно!</p>
+        <p class="socials__desc">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
