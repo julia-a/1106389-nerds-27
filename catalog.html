@@ -19,7 +19,7 @@
       </a>
 
       <!-- Main menu -->       
-      <ul class="menu__list">
+      <ul class="menu">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Студия</a>
         </li>
@@ -50,7 +50,8 @@
   <main class="main">
 
     <!-- Aside -->
-    <aside class="filter">
+    <section class="filters">
+      <h2 class="visually-hidden">Подбор шаблона по параметрам</h2>
       <!-- Здесь будет расчет стоимости -->
 
       <!-- Форма выбора типа сетки -->
@@ -100,7 +101,7 @@
       </fieldset>
 
       <button class="button button_grey" type="button">Показать</button>
-    </aside>
+    </section>
 
     <!-- Catalog -->
     <section class="catalog">
@@ -108,25 +109,55 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/sedona.jpg" alt="Скриншот сайта Sedona" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">Sedona</h3></a>
+            <p class="description__text">Информационный сайт для туристов</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/pink.jpg" alt="Скриншот сайта Pink App" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">Pink App</h3></a>
+            <p class="description__text">Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/barbershop.jpg" alt="Скриншот сайта Barbershop" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">Barbershop</h3></a>
+            <p class="description__text">Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/mishka.jpg" alt="Скриншот сайта Mishka" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">Mishka</h3></a>
+            <p class="description__text">Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">A Plus</h3></a>
+            <p class="description__text">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/kvast.jpg" alt="Скриншот сайта Кваст" width="360" height="576">
+          <div class="description">
+            <a href="#" class="description__link"><h3 class="description__title">Кваст</h3></a>
+            <p class="description__text">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="link">9 900 руб.</a>
+          </div>
         </li>
       </ul>
       <ul class="pagination">
-        <li class="pagination__item"><a href="/">1</a></li>
+        <li class="pagination__item"><a>1</a></li>
         <li class="pagination__item"><a href="#">2</a></li>
         <li class="pagination__item"><a href="#">3</a></li>
         <li class="pagination__item"><a href="#">Следующая</a></li>
