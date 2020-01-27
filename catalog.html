@@ -37,7 +37,7 @@
       <!-- User menu -->
       <ul class="user-menu">
         <li class="user-menu__item">
-          <a href="#" class="link">Корзина</a>
+          <a href="#" class="button button_cart">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -53,8 +53,22 @@
     <!-- Filters -->
     <section class="filters">
       <h2 class="visually-hidden">Подбор шаблона по параметрам</h2>
-      <!-- Здесь будет расчет стоимости -->
 
+      <!-- Расчет стоимости -->
+      <fieldset class="price">
+        <legend class="price__name">Стоимость:</legend>
+        <div class="range-control">
+          <div class="progress">
+            <button class="button" type="button"><span class="visually-hidden">стоимость от</span></button>
+            <button class="button" type="button"><span class="visually-hidden">стоимость до</span></button>
+          </div>
+        </div>
+        <div class="range-display">
+          <label>От<input type="text" name="min-price" value="0"></label>
+          <label>До<input type="text" name="max-price" value="15000"></label>
+        </div>
+      </fieldset>
+      
       <!-- Форма выбора типа сетки -->
       <fieldset class="grid">
         <legend class="grid__name">Сетка:</legend>
@@ -107,62 +121,96 @@
     <!-- Catalog -->
     <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
+      
+      <!-- Сортировка -->
+      <div class="sorting">
+        <p class="sorting__name">Сортировать:</p>
+        <ul class="sorting__list">
+          <li class="sorting__item"><a class="sorting__link">По цене</a></li>
+          <li class="sorting__item"><a href="#"class="sorting__link">По типу</a></li>
+          <li class="sorting__item"><a href="#"class="sorting__link">По названию</a></li>
+        </ul>
+        <ul class="sorting__direction">
+          <li class="sorting__item"><a class="sorting__link"><span class="visually-hidden">По убыванию</span></a></li>
+          <li class="sorting__item"><a href="#" class="sorting__link"><span class="visually-hidden">По возрастанию</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Шаблоны сайтов -->
       <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/sedona.jpg" alt="Скриншот сайта Sedona" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">Sedona</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">Sedona</a></h3>
             <p class="description__text">Информационный сайт для туристов</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/pink.jpg" alt="Скриншот сайта Pink App" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">Pink App</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">Pink App</a></h3>
             <p class="description__text">Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/barbershop.jpg" alt="Скриншот сайта Barbershop" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">Barbershop</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">Barbershop</a></h3>
             <p class="description__text">Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/mishka.jpg" alt="Скриншот сайта Mishka" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">Mishka</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">Mishka</a></h3>
             <p class="description__text">Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">A Plus</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">A Plus</a></h3>
             <p class="description__text">Лендинг курсов повышения квалификации</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__img" src="img/catalog/kvast.jpg" alt="Скриншот сайта Кваст" width="360" height="576">
           <div class="description">
-            <a href="#" class="description__link"><h3 class="description__title">Кваст</h3></a>
+            <h3 class="description__title"><a href="#" class="description__link">Кваст</a></h3>
             <p class="description__text">Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="link">9 900 руб.</a>
+            <a href="#" class="button">9 900 руб.</a>
           </div>
         </li>
       </ul>
+
+      <!-- Pagination -->
       <ul class="pagination">
         <li class="pagination__item"><a>1</a></li>
         <li class="pagination__item"><a href="#">2</a></li>
         <li class="pagination__item"><a href="#">3</a></li>
-        <li class="pagination__item"><a href="#">Следующая</a></li>
+        <li class="pagination__item"><a href="#" class="button button_grey">Следующая</a></li>
       </ul>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <img class="contacts__map" src="img/" alt="Карта" width="1440" height="416">
+      <!-- Address -->
+      <div class="contacts__info">
+        <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+        <address class="contacts__address">
+          191186, Санкт-Петербург,<br> 
+          ул. Б. Конюшенная, д. 19/8
+          <p class="contacts__phone">тел. <a class="phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p> 
+          <a href="#" class="button">Напишите нам</a>
+        </address>
+      </div>
     </section>
   </main>
 
