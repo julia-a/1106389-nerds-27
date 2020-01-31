@@ -53,69 +53,70 @@
     <!-- Filters -->
     <section class="filters">
       <h2 class="visually-hidden">Подбор шаблона по параметрам</h2>
+      <form method="post" action="https://echo.htmlacademy.ru">
 
-      <!-- Расчет стоимости -->
-      <fieldset class="price">
-        <legend class="price__name">Стоимость:</legend>
-        <div class="range-control">
-          <div class="progress">
-            <button class="button" type="button"><span class="visually-hidden">стоимость от</span></button>
-            <button class="button" type="button"><span class="visually-hidden">стоимость до</span></button>
+        <!-- Расчет стоимости -->
+        <fieldset class="price">
+          <legend class="price__name">Стоимость:</legend>
+          <div class="range-control">
+            <div class="progress">
+              <button class="button" type="button"><span class="visually-hidden">стоимость от</span></button>
+              <button class="button" type="button"><span class="visually-hidden">стоимость до</span></button>
+            </div>
           </div>
-        </div>
-        <div class="range-display">
-          <label>От<input type="text" name="min-price" value="0"></label>
-          <label>До<input type="text" name="max-price" value="15000"></label>
-        </div>
-      </fieldset>
-      
-      <!-- Форма выбора типа сетки -->
-      <fieldset class="grid">
-        <legend class="grid__name">Сетка:</legend>
-        <ul class="grid__list">
-          <li class="grid__item">
-            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>
-          </li>
-          <li class="grid__item">
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label for="fixed">Фиксированная</label>
-          </li>
-          <li class="grid__item">
-            <input type="radio" name="grid" id="fluid" value="fluid">
-            <label for="fluid">Резиновая</label>
-          </li>
-        </ul>
-      </fieldset>
+          <div class="range-display">
+            <label>От<input type="text" name="min-price" value="0"></label>
+            <label>До<input type="text" name="max-price" value="15000"></label>
+          </div>
+        </fieldset>
+        
+        <!-- Форма выбора типа сетки -->
+        <fieldset class="grid">
+          <legend class="grid__name">Сетка:</legend>
+          <ul class="grid__list">
+            <li class="grid__item">
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li class="grid__item">
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li class="grid__item">
+              <input type="radio" name="grid" id="fluid" value="fluid">
+              <label for="fluid">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <!-- Форма выбора особенностей макета -->
-      <fieldset class="features">
-        <legend class="features__name">Особенности:</legend>
-        <ul class="features__list">
-          <li class="features__item">
-            <input type="checkbox" name="features" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label>
-          </li>
-          <li class="features__item">
-            <input type="checkbox" name="features" id="advantages-block" value="advantages-block">
-            <label for="advantages-block">Блок преимуществ</label>
-          </li>
-          <li class="features__item">
-            <input type="checkbox" name="features" id="news" value="news">
-            <label for="news">Новости</label>
-          </li>
-          <li class="features__item">
-            <input type="checkbox" name="features" id="gallery" value="gallery">
-            <label for="gallery">Галерея</label>
-          </li>
-          <li class="features__item">
-            <input type="checkbox" name="features" id="cart" value="cart">
-            <label for="gallery">Корзина</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <button class="button button_grey" type="button">Показать</button>
+        <!-- Форма выбора особенностей макета -->
+        <fieldset class="features">
+          <legend class="features__name">Особенности:</legend>
+          <ul class="features__list">
+            <li class="features__item">
+              <input type="checkbox" name="features" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="features" id="advantages-block" value="advantages-block">
+              <label for="advantages-block">Блок преимуществ</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="features" id="news" value="news">
+              <label for="news">Новости</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="features" id="gallery" value="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="features" id="cart" value="cart">
+              <label for="gallery">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button_grey" type="button">Показать</button>
+      </form>
     </section>
 
     <!-- Catalog -->
