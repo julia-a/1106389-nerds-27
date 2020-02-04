@@ -1,0 +1,278 @@
+/* layout settings */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 400 16px "Roboto", Tahoma, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.fieldset {
+  border: none;
+}
+
+.list-style {
+  list-style: none;
+}
+
+/* Состояния и модификаторы для кнопки  */
+.button {
+  padding: 10px;
+  font-weight: 500;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.button_green {
+  background-color: #00ca74;
+}
+
+.button_green:hover {
+  background-color: #00bc6c;
+}
+
+.button_green:active {
+  color: rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
+
+.button_yellow {
+  background-color: #efc84a;
+}
+
+.button_yellow:hover {
+  background-color: #eab534;
+}
+
+.button_yellow:active {
+  color: rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
+/* end of layout settings */
+
+
+/* Header */
+.header {
+  background-color: #eee;
+}
+
+.logo__img:hover {
+  opacity: 0.8; 
+ }
+
+.logo__img:active {
+ opacity: 0.3; 
+}
+
+.main-menu,
+.user-menu {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Состояния ссылок для main-menu и user-menu  */
+.main-menu__link:hover, 
+.main-menu__link:focus,
+.user-menu__link:hover, 
+.user-menu__link:focus {
+  color: #fb565a;
+}
+
+.main-menu__link:active,  
+.user-menu__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.current {
+    border-bottom: 2px solid #fb565a;
+}
+
+/* Main */
+/* Slider */
+.slider__desc {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.slider__text {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #283136;
+}
+
+/* Services */
+.services__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.services__text {
+  line-height: 1.5;
+  color: #283136;
+}
+
+/* About */
+.about__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about__text {
+  line-height: 1.5;
+  color: #283136;
+}
+
+.about__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.about__item {
+  line-height: 1.5;
+  color: #283136;
+}
+
+.table__caption {
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.table__сol-heading {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  color: #283136;
+}
+
+.table__body {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Partners */
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__img {
+  opacity: 0.2;
+}
+
+.partners__img:hover {
+  opacity: 1;
+}
+
+.partners__img:active {
+  opacity: 0.1;
+}
+
+/* Contacts */
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts__address,
+.phone {
+  font-style: normal;
+  line-height: 18px;
+  color: #666666;
+}
+
+/* Footer */
+.socials__text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.socials__desc {
+  line-height: 22px;
+  color: #444444;
+}
+
+.socials__item {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.socials__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socials__item:hover {
+  background-color: #e74246;
+}
+
+.socials__item:active {
+  background-color: #d7373b;
+}
+
+.socials__link:active {
+  opacity: 0.3;
+}
+
+/* Modal */
+.modal {
+  display: none;
+}
