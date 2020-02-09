@@ -13,10 +13,10 @@
 
   <!-- Header -->
   <header class="header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
 
       <!-- Logo -->
-      <a class="logo-main">
+      <a class="logo">
         <img class="logo__img" src="img/svg/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
       </a>
 
@@ -39,7 +39,7 @@
       <!-- User menu -->
       <ul class="menu reset-list">
         <li class="menu__item">
-          <a href="#" class="menu__link">Корзина</a>
+          <a href="#" class="menu__link menu__link_cart">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -50,35 +50,43 @@
 
     <!-- Slider -->
     <section class="slider">
-      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-      <div class="slider__item">
-        <p class="slider__desc">Долго, дорого, скрупулезно.</p>
-        <p class="slider__text">
-          Математически выверенный дизайн<br> 
-          для вашего сайта или мобильного приложения.
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-      </div>
-      <div class="slider__item">
-        <p class="slider__desc">Любим математику как никто другой.</p>
-        <p class="slider__text">
-          Никакого креатива, только математические формулы<br> 
-          для расчета идеальных пропорций.
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-      </div>
-      <div class="slider__item">
-        <p class="slider__desc">Только ночь, только хардкор.</p>
-        <p class="slider__text">
-          Работать днем, как все? Мы против этого.<br>
-          Ближе к полуночи работа только начинается.
-        </p>
-        <a href="#" class="button">Узнать больше</a>
+      <div class="container">
+        <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+        <div class="slider__item">
+          <div class="slider__column-wrapper">
+            <p class="slider__desc">Долго, дорого, скрупулезно.</p>
+            <p class="slider__text">
+              Математически выверенный дизайн<br> 
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__column-wrapper">
+            <p class="slider__desc">Любим математику как никто другой.</p>
+            <p class="slider__text">
+              Никакого креатива, только математические формулы<br> 
+              для расчета идеальных пропорций.
+            </p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__column-wrapper">
+            <p class="slider__desc">Только ночь, только хардкор.</p>
+            <p class="slider__text">
+              Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a href="#" class="button">Узнать больше</a>
+          </div>
+        </div>
       </div>
     </section> 
 
     <!-- Services -->
-    <section class="services">
+    <section class="services container">
       <h2 class="visually-hidden">Наши услуги</h2>
       <ul class="services__list reset-list">
         <li class="services__item">
@@ -100,52 +108,57 @@
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about container">
       <h2 class="visually-hidden">О нас</h2>
-      <div class="about__desc">
-        <p class="about__title">
-          Мы — маленькая, но гордая<br>
-          дизайн-студия из Краснодара.
-        </p>
-        <p class="about__text">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. 
-          Работаем не покладая рук, как роботы.
-        </p>
+      <div class="about__column-left">
+        <div class="about__desc">
+          <p class="about__title">
+            Мы — маленькая, но гордая<br>
+            дизайн-студия из Краснодара.
+          </p>
+          <p class="about__text">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. 
+            Работаем не покладая рук, как роботы.
+          </p>
+        </div>
+        <div class="about__services">   
+          <h3 class="about__subtitle">Выполняем заказы на разработку:</h3>
+          <ul class="about__list reset-list">
+            <li class="about__item">Веб-сайтов любой сложности</li>
+            <li class="about__item">Мобильных приложений для iOS и Android</li>
+            <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
       </div>
-      <div class="about__services">   
-        <h3 class="about__subtitle">Выполняем заказы на разработку:</h3>
-        <ul class="about__list reset-list">
-          <li class="about__item">Веб-сайтов любой сложности</li>
-          <li class="about__item">Мобильных приложений для iOS и Android</li>
-          <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
-      <div class="about__logo">
-        <img src="img/nerds-logo-2.jpg" alt="Второй логотип дизайн-студии «Нёрдс»" width="360" height="208">
-      </div>
-      <div class="about__statistics">
-        <table class="table">
-          <caption class="table__caption">с 2004 года Любим точность во всем:</caption>
-          <thead>
-            <tr>
-              <th class="table__сol-heading">Уровень самоотдачи</th>
-              <th class="table__сol-heading">Соблюдение сроков</th>
-              <th class="table__сol-heading">Минимальная предоплата</th>
-            </tr>
-          </thead>
-          <tbody class="table__body">
-            <tr>
-              <td>146<sup>%</sup></td>
-              <td>100<sup>%</sup></td>
-              <td>50<sup>%</sup></td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="about__column-right">
+        <div class="about__logo">
+          <img src="img/nerds-logo-2.jpg" alt="Второй логотип дизайн-студии «Нёрдс»" width="360" height="208">
+        </div>
+        <div class="about__statistics">
+          <table class="table">
+            <caption class="table__caption">с 2004 года Любим точность во всем:</caption>
+            <thead>
+              <tr>
+                <th class="table__сol-heading">Уровень самоотдачи</th>
+                <th class="table__сol-heading">Соблюдение сроков</th>
+                <th class="table__сol-heading">Минимальная предоплата</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr>
+                <td class="table__item">146<sup>%</sup></td>
+                <td class="table__item">100<sup>%</sup></td>
+                <td class="table__item">50<sup>%</sup></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- Partners -->
-    <section class="partners">
+    <section class="partners container">
       <h2 class="visually-hidden">Наши партнеры</h2>
       <ul class="partners__list reset-list">
         <li class="partners__item">
@@ -174,23 +187,28 @@
     <!-- Contacts -->
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc49cb12c9aac106fd90b016b27f8deedd8b277e3da57831f5dc3842c2cd058d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-      <img class="contacts__map visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
-      <!-- Address -->
-      <div class="contacts__info">
-        <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
-        <address class="contacts__address">
-          191186, Санкт-Петербург,<br> 
-          ул. Б. Конюшенная, д. 19/8
-          <p class="contacts__phone">тел. <a class="phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p> 
-          <a href="#" class="button">Напишите нам</a>
-        </address>
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc49cb12c9aac106fd90b016b27f8deedd8b277e3da57831f5dc3842c2cd058d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+        <img class="visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+    
+        <div class="contacts__info">
+          <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+          <address class="contacts__address">
+            191186, Санкт-Петербург,<br> 
+            ул. Б. Конюшенная, д. 19/8
+            <p class="contacts__phone">тел. <a class="phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p> 
+            <a href="#" class="button">Напишите нам</a>
+          </address>
+        </div>
+      </div>
+  
+ 
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer container">
     <section class="socials"> 
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="socials__list reset-list">
