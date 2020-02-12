@@ -119,6 +119,7 @@ a {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   font-weight: 500;
@@ -168,7 +169,7 @@ a {
   width: 15px;
   height: 15px;
 
-  background-image: url(/img/svg/cart-icon.svg);
+  background-image: url(../img/svg/cart-icon.svg);
   background-repeat: no-repeat;
 }
 
@@ -176,6 +177,9 @@ a {
 /* Slider */
 .slider {
   padding-top: 18px;
+  padding-left: calc((100% - 1160px)/2);
+  padding-right: calc((100% - 1160px)/2);
+
   background-color: #eee;
 }
 
@@ -187,24 +191,20 @@ a {
 }
 
 .slider__item:nth-child(2) {
-  background-image: url(/img/slide-bd-iphones.png);
+  background-image: url(../img/slide-bd-iphones.png);
 }
 
 .slider__item:nth-child(3) {
-  background-image: url(/img/slide-bd-displays.png);
+  background-image: url(../img/slide-bd-displays.png);
 }
 
 .slider__item:nth-child(4) {
-  background-image: url(/img/slide-bg-devices.png);
+  background-image: url(../img/slide-bg-devices.png);
 }
 
 .slider__column-wrapper {
   width: 515px;
   padding-top: 67px;
-}
-
-.slider__item:nth-child(n+3) {
-  display: none;
 }
 
 .slider__desc {
@@ -228,6 +228,10 @@ a {
   border-bottom: 2px solid #eee;
 }
 
+.main .service {
+  margin-top: 80px;
+}
+
 .services__list {
   display: flex;
   justify-content: space-between;
@@ -240,15 +244,15 @@ a {
 }
 
 .services__item:nth-child(1) {
-  background-image: url(/img/illustration-1.jpg);
+  background-image: url(../img/illustration-1.jpg);
 }
 
 .services__item:nth-child(2) {
-  background-image: url(/img/illustration-2.jpg);
+  background-image: url(../img/illustration-2.jpg);
 }
 
 .services__item:nth-child(3) {
-  background-image: url(/img/illustration-3.jpg);
+  background-image: url(../img/illustration-3.jpg);
 }
 
 .services__subtitle {
@@ -275,8 +279,9 @@ a {
   border-bottom: 2px solid #eee;
 }
 
-.about__column-left {
-  padding-right: 150px;
+.about__info {
+  width: 650px;
+  margin-right: auto;
 }
 
 .about__title {
@@ -321,7 +326,7 @@ a {
   background-color: #fb565a;
 }
 
-.about__column-right {
+.about__statistics {
   width: 360px;
 }
 
@@ -354,7 +359,7 @@ a {
 /* Partners */
 .partners {
   padding: 45px 35px;
-  
+
 }
 
 .partners__list {
@@ -384,6 +389,7 @@ a {
   position: relative;
 }
 
+/* Плашка «Адрес» (position: absolute) */
 .contacts__info {
   position: absolute;
   top: 55px;
@@ -391,7 +397,7 @@ a {
 
   width: 340px;
   padding: 50px;
-  
+
   background-color: #fff;
 }
 
@@ -476,13 +482,23 @@ a {
   background-color: #eee;
 }
 
+.main-wrapper {
+  display: flex;
+  margin-top: 65px;
+}
+
 /* Filters */
 .filters {
+  margin-right: 140px;
+
   line-height: 1.25;
   color: #283136;
 }
 
 .price {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -492,10 +508,97 @@ a {
   text-transform: uppercase;
 }
 
+.range-filter {
+  width: 265px;
+  margin-top: 50px;
+}
+
+.range-controls {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.scale {
+  width: 225px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 18px;
+}
+
+.toggle-max {
+  left: 165px;
+}
+
+.price-controls {
+  margin-top: 14px;
+
+  font-size: 0; 
+  text-transform: uppercase; 
+  color: #283136;
+}
+
+.price-controls__label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+}
+
+.price-controls__label:last-child {
+  text-align: right;
+}
+
+.price-controls__input {
+  width: 85px;
+  padding: 10px 5px;
+  margin-left: 10px;
+
+
+  font-size: 16px;
+  text-align: center;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
 .button-up {
   width: 10px;
   height: 10px;
-  background-image: url(/img/svg/icon-up-dir.svg);
+  background-image: url("../img/svg/icon-up-dir.svg");
   background-repeat: no-repeat;
   border: none;
 }
@@ -503,21 +606,24 @@ a {
 .button-down {
   width: 10px;
   height: 10px;
-  background-image: url(/img/svg/icon-down-dir.svg);
+  background-image: url("../img/svg/icon-down-dir.svg");
   background-repeat: no-repeat;
   border: none;
 }
 
 .range-display {
-  color: #283136;
   text-transform: uppercase;
 }
 
 .grid {
+  margin-top: 60px;
+
   border: none;
 }
 
 .features {
+  margin-top: 50px;
+  
   border: none;
 }
 
