@@ -21,7 +21,7 @@
       </a>
 
       <!-- Main menu -->       
-      <ul class="menu  reset-list header__main-menu">
+      <ul class="menu reset-list header__menu">
         <li class="menu__item">
           <a href="index.html" class="menu__link">Студия</a>
         </li>
@@ -37,7 +37,7 @@
       </ul>
 
       <!-- User menu -->
-      <ul class="menu reset-list">
+      <ul class="menu reset-list header__menu header__menu_m-left">
         <li class="menu__item">
           <a href="#" class="menu__link menu__link_cart">Корзина</a>
         </li>
@@ -80,21 +80,24 @@
           <fieldset class="selection selection_margin-top">
             <legend class="selection__name">Сетка:</legend>
             <ul class="selection__list reset-list">
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="radio" name="grid" value="adaptive" checked>
+                  <span class="selector__box"></span>
                   Адаптивная
                 </label>
               </li>
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="radio" name="grid" value="fixed">
+                  <span class="selector__box"></span>
                   Фиксированная
                 </label>
               </li>
-              <li class="selector">
-                <label>
-                  <input class="selector__input" type="radio" name="grid" value="fluid">
+              <li class="selection__item">
+                <label class="selector">
+                  <input class="selector__input" type="radio" name="grid" value="fluid" disabled>
+                  <span class="selector__box"></span>
                   Резиновая
                 </label>
               </li>
@@ -105,33 +108,38 @@
           <fieldset class="selection selection_margin-top">
             <legend class="selection__name">Особенности:</legend>
             <ul class="selection__list reset-list">
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="checkbox" name="feature-1" value="slider" checked>
+                  <span class="selector__box selector__box_checkbox"></span>
                   Слайдер
                 </label>
               </li>
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="checkbox" name="feature-2" value="advantages-block">
+                  <span class="selector__box selector__box_checkbox"></span>
                   Блок преимуществ
                 </label>
               </li>
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="checkbox" name="feature-3" value="news" checked>
+                  <span class="selector__box selector__box_checkbox"></span>
                   Новости
                 </label>
               </li>
-              <li class="selector">
-                <label>
+              <li class="selection__item">
+                <label class="selector">
                   <input class="selector__input" type="checkbox" name="feature-4" value="gallery">
+                  <span class="selector__box selector__box_checkbox"></span>
                   Галерея
                 </label>
               </li>
-              <li class="selector">
-                <label>
-                  <input class="selector__input" type="checkbox" name="feature-5" value="cart">
+              <li class="selection__item">
+                <label class="selector">
+                  <input class="selector__input" type="checkbox" name="feature-5" value="cart" disabled>
+                  <span class="selector__box selector__box_checkbox"></span>
                   Корзина
                 </label>
               </li>
@@ -261,31 +269,28 @@
       </div>
     </section>
   </footer>
+
   <!-- Modal -->
-  <section class="modal">
+  <section class="modal visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="write__fieldset">
-        <legend>Напишите нам</legend>
-        <p>
-          <label>Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
+        <legend class="write__legend">Напишите нам</legend>
+        <div class="write__wrapper">
+          <label class="write__label write__label_name">Ваше имя:
+            <input class="write__input" type="text" name="name" placeholder="Имя Фамилия">
           </label>
-        </p>
-        <p>
-          <label>Ваш e-mail:
-            <input type="email" name="mail" placeholder="email@example.com">
+          <label class="write__label write__label_email">Ваш e-mail:
+            <input class="write__input" type="email" name="mail" placeholder="email@example.com">
           </label>
-        </p>
-        <p>
-          <label>Текст письма:
-            <textarea name="message" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <button class="button" type="submit">Отправить</button>
+        </div>
+        <label class="write__label write__label_textarea">Текст письма:
+          <textarea class="write__textarea" name="message" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="button modal__button" type="submit">Отправить</button>
       </fieldset>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 </html>

@@ -21,7 +21,7 @@
       </a>
 
       <!-- Main menu -->       
-      <ul class="menu header__main-menu reset-list">
+      <ul class="menu reset-list header__menu">
         <li class="menu__item">
           <a href="#" class="menu__link">Студия</a>
         </li>
@@ -37,7 +37,7 @@
       </ul>
 
       <!-- User menu -->
-      <ul class="menu reset-list">
+      <ul class="menu reset-list header__menu header__menu_m-left">
         <li class="menu__item">
           <a href="#" class="menu__link menu__link_cart">Корзина</a>
         </li>
@@ -132,28 +132,24 @@
         </ul>
       </div>
 
-      <div class="about__statistics">
-        <div class="about__logo">
-          <img src="img/nerds-logo-2.jpg" alt="Второй логотип дизайн-студии «Нёрдс»" width="360" height="208">
-        </div>
-        <table class="table about__table">
-          <caption class="table__caption">с 2004 года Любим точность во всем:</caption>
-          <thead>
-            <tr>
-              <th class="table__сol-heading">Уровень самоотдачи</th>
-              <th class="table__сol-heading">Соблюдение сроков</th>
-              <th class="table__сol-heading">Минимальная предоплата</th>
-            </tr>
-          </thead>
-          <tbody class="table__body">
-            <tr>
-              <td class="table__item">146<sup>%</sup></td>
-              <td class="table__item">100<sup>%</sup></td>
-              <td class="table__item">50<sup>%</sup></td>
-            </tr>
-          </tbody>
-        </table>
-    
+      <div class="statistics">
+        <img src="img/nerds-logo-2.jpg" alt="Второй логотип дизайн-студии «Нёрдс»" width="360" height="208">
+        <p class="statistics__title">C 2004 года Любим точность во всем:</p>
+       
+        <ul class="statistics__list reset-list ">
+          <li class="statistics__item">
+            <p class="statistics__heading">Уровень самоотдачи</p>
+            <p class="statistics__desc">146<sup>%</sup></p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__heading">Соблюдение сроков</p>
+            <p class="statistics__desc">100<sup>%</sup></p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__heading">Минимальная предоплата</p>
+            <p class="statistics__desc">50<sup>%</sup></p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -188,7 +184,7 @@
     <section class="contacts main__contacts">
       <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc49cb12c9aac106fd90b016b27f8deedd8b277e3da57831f5dc3842c2cd058d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
       <img class="visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
-      <div class="container">
+      
         <!-- Плашка «Адрес» (position: absolute) -->
         <div class="contacts__info">
           <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
@@ -199,7 +195,7 @@
             <a href="#" class="button contacts__button">Напишите нам</a>
           </address>
         </div>
-      </div>
+
     </section>
   </main>
 
@@ -226,30 +222,26 @@
   </footer>
 
   <!-- Modal -->
-  <section class="modal">
+  <section class="modal visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="write__fieldset">
-        <legend>Напишите нам</legend>
-        <p>
-          <label>Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
+        <legend class="write__legend">Напишите нам</legend>
+        <div class="write__wrapper">
+          <label class="write__label write__label_name">Ваше имя:
+            <input class="write__input" type="text" name="name" placeholder="Имя Фамилия">
           </label>
-        </p>
-        <p>
-          <label>Ваш e-mail:
-            <input type="email" name="mail" placeholder="email@example.com">
+          <label class="write__label write__label_email">Ваш e-mail:
+            <input class="write__input" type="email" name="mail" placeholder="email@example.com">
           </label>
-        </p>
-        <p>
-          <label>Текст письма:
-            <textarea name="message" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <button class="button" type="submit">Отправить</button>
+        </div>
+        <label class="write__label write__label_textarea">Текст письма:
+          <textarea class="write__textarea" name="message" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="button modal__button" type="submit">Отправить</button>
       </fieldset>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 </html>
