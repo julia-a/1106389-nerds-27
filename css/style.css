@@ -294,14 +294,14 @@ input[type=number]::-webkit-outer-spin-button {
 .slider__controls {
   position: absolute;
   bottom: 90px;
-  left: calc((1160px)/2);
+  left: 46.5%;
 }
 
 .slider__control {
   position: relative;
   width: 18px;
   height: 18px;
-  margin-right: 18px;
+  margin-right: 16px;
 
   background-color: white;
   border: none;
@@ -505,8 +505,6 @@ input[type=number]::-webkit-outer-spin-button {
 .main__partners {
   padding-top: 48px;
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
@@ -528,7 +526,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .partners__item::after {
   content: "";
-  top: 50%;
+  top: 42%;
   left: 0;
   transform: translate(0, -50%);
 
@@ -544,6 +542,15 @@ input[type=number]::-webkit-outer-spin-button {
   background: none;
 }
 
+.partners__item:nth-child(2)::after {
+  left: -10px;
+}
+
+.partners__item:nth-child(4)::after {
+  left: 10px;
+}
+
+
 .partners__img {
   opacity: 0.2;
 }
@@ -554,6 +561,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .partners__img:active {
   opacity: 0.1;
+}
+
+.partners__link_academy {
+  margin-left: -22px;
+}
+
+.partners__link_pink {
+  margin-left: 15px;
+}
+
+.partners__link_mishka {
+  margin-left: 32px;
 }
 
 /* Contacts */
@@ -570,15 +589,18 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 }
 
-/* Плашка «Адрес» (position: absolute) */
+.contacts__wrapper {
+  padding-left: calc((100% - 1160px)/2);
+  padding-right: calc((100% - 1160px)/2);
+}
+
 .contacts__info {
   position: absolute;
   top: 50px;
   left: 50px;
 
+  width: 320px;
   padding: 50px;
-  padding-left: calc((100% - 1160px)/2);
-  padding-right: calc((100% - 1160px)/2);
 
   background-color: #fff;
 }
@@ -608,8 +630,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts__button {
   margin-top: 20px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Footer */
@@ -956,7 +978,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sorting__name {
   margin: 0;
-  margin-right: auto;
+  margin-right: 267px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -967,7 +989,6 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
 }
 
 .sorting__link {
@@ -988,11 +1009,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sorting__direction {
-  width: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
+  width: 40px;
+  margin-left: auto;
 }
 
 .link-direction {
@@ -1153,6 +1174,8 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   top: 150px;
   left: 50%;
+  
+  display: none;
   width: 960px;
   margin-left: -480px;
   padding: 68px 100px 85px 100px;
@@ -1162,6 +1185,10 @@ input[type=number]::-webkit-outer-spin-button {
 
   background-color: white;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal__show {
+  display: block;
 }
 
 .write__label {
@@ -1235,8 +1262,20 @@ input[type=number]::-webkit-outer-spin-button {
   width: 360px;
 }
 
+.write__error {
+  display: none;
+  margin-top: 20px;
+  
+  color: #fb565a;
+}
+
+.write__error_show {
+  display: block;
+}
+
+
 .modal__button {
-  margin-top: 42px;
+  margin-top: 40px;
   padding-left: 85px;
   padding-right: 85px;
 }

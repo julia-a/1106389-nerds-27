@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Дизайн-студия «Нёрдс»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -158,7 +157,7 @@
       <h2 class="visually-hidden">Наши партнеры</h2>
       <ul class="partners__list reset-list">
         <li class="partners__item">
-          <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript">
+          <a class="partners__link partners__link_academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript">
             <img class="partners__img" src="img/logo-academy.png" alt="Логотип HTML Academy" width="199" height="68">
           </a>
         </li>
@@ -168,12 +167,12 @@
           </a>
         </li>
         <li class="partners__item">
-          <a class="partners__link" href="#" target="_blank" aria-label="Pink: приложение для обработки фотографий">
-            <img class="partners__img" src="img/logo-pink.png" alt="Логотип Pink" width="185" height="52">
+          <a class="partners__link partners__link_pink" href="#" target="_blank" aria-label="Pink: приложение для обработки фотографий">
+            <img class="partners__img" src="img/logo-pink.png" alt="Логотип Pink" width="185" height="52"> 
           </a>
         </li>
         <li class="partners__item">
-          <a class="partners__link" href="#" target="_blank" aria-label="Mishka: интернет-магазин вязаных игрушек">
+          <a class="partners__link partners__link_mishka" href="#" target="_blank" aria-label="Mishka: интернет-магазин вязаных игрушек">
             <img class="partners__img" src="img/logo-mishka.png" alt="Логотип Mishka" width="173" height="84">
           </a>
         </li>
@@ -182,10 +181,11 @@
 
     <!-- Contacts -->
     <section class="contacts main__contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc49cb12c9aac106fd90b016b27f8deedd8b277e3da57831f5dc3842c2cd058d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
       <img class="visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
       
-        <!-- Плашка «Адрес» (position: absolute) -->
+      <div class="contacts__wrapper">
         <div class="contacts__info">
           <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
           <address class="contacts__address">
@@ -195,7 +195,7 @@
             <a href="#" class="button contacts__button">Напишите нам</a>
           </address>
         </div>
-
+      </div>
     </section>
   </main>
 
@@ -222,26 +222,29 @@
   </footer>
 
   <!-- Modal -->
-  <section class="modal visually-hidden">
+  <section class="modal">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="write__fieldset">
         <legend class="write__legend">Напишите нам</legend>
         <div class="write__wrapper">
           <label class="write__label write__label_name">Ваше имя:
-            <input class="write__input" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="write__input" type="text" name="username" placeholder="Имя Фамилия">
           </label>
           <label class="write__label write__label_email">Ваш e-mail:
-            <input class="write__input" type="email" name="mail" placeholder="email@example.com">
+            <input class="write__input" type="email" name="email" placeholder="email@example.com">
           </label>
         </div>
         <label class="write__label write__label_textarea">Текст письма:
           <textarea class="write__textarea" name="message" placeholder="В свободной форме"></textarea>
         </label>
+        <p class="write__error">Пожалуйста, заполните все поля формы!</p>
         <button class="button modal__button" type="submit">Отправить</button>
+        
       </fieldset>
     </form>
     <button class="modal__close" type="button" aria-label="Закрыть"></button>
   </section>
+  <script src="js/script.js"></script>  
 </body>
 </html>
