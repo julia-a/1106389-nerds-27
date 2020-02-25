@@ -80,23 +80,17 @@
           <fieldset class="selection selection_margin-grid">
             <legend class="selection__name">Сетка:</legend>
             <ul class="selection__list reset-list">
-              <li class="selection__item">
-                <label class="selector radio">
-                  <input class="selector__input visually-hidden" type="radio" name="grid" value="adaptive" checked>
-                  Адаптивная
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                <label class="selector__label selector__label_radio" for="adaptive">Адаптивная</label>
               </li>
-              <li class="selection__item">
-                <label class="selector radio">
-                  <input class="selector__input visually-hidden" type="radio" name="grid" value="fixed">
-                  Фиксированная
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="fixed" type="radio" name="grid" value="fixed">
+                <label class="selector__label selector__label_radio" for="fixed">Фиксированная</label>
               </li>
-              <li class="selection__item">
-                <label class="selector radio">
-                  <input class="selector__input visually-hidden" type="radio" name="grid" value="fluid" disabled>
-                  Резиновая
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="fluid" type="radio" name="grid" value="fluid" disabled>
+                <label class="selector__label selector__label_radio" for="fluid">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -105,35 +99,25 @@
           <fieldset class="selection selection_margin-features">
             <legend class="selection__name">Особенности:</legend>
             <ul class="selection__list reset-list">
-              <li class="selection__item">
-                <label class="selector checkbox">
-                  <input class="selector__input visually-hidden" type="checkbox" name="feature-1" value="slider" checked>
-                  Слайдер
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="slider" type="checkbox" name="feature-1" value="slider" checked>
+                <label class="selector__label selector__label_checkbox" for="slider">Слайдер</label>
               </li>
-              <li class="selection__item">
-                <label class="selector checkbox">
-                  <input class="selector__input visually-hidden" type="checkbox" name="feature-2" value="advantages-block">
-                  Блок преимуществ
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="advantages-block" type="checkbox" name="feature-2" value="advantages-block">
+                <label class="selector__label selector__label_checkbox" for="advantages-block">Блок преимуществ</label>
               </li>
-              <li class="selection__item">
-                <label class="selector checkbox">
-                  <input class="selector__input visually-hidden" type="checkbox" name="feature-3" value="news" checked>
-                  Новости
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="news" type="checkbox" name="feature-3" value="news" checked>
+                <label class="selector__label selector__label_checkbox" for="news">Новости</label>
               </li>
-              <li class="selection__item">
-                <label class="selector checkbox">
-                  <input class="selector__input visually-hidden" type="checkbox" name="feature-4" value="gallery">
-                  Галерея
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="news" type="checkbox" name="feature-4" value="gallery">
+                <label class="selector__label selector__label_checkbox" for="gallery">Галерея</label>
               </li>
-              <li class="selection__item">
-                <label class="selector checkbox">
-                  <input class="selector__input visually-hidden" type="checkbox" name="feature-5" value="cart" disabled>
-                  Корзина
-                </label>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="cart" type="checkbox" name="feature-5" value="cart" disabled>
+                <label class="selector__label selector__label_checkbox" for="cart">Корзина</label>
               </li>
             </ul>
           </fieldset>
