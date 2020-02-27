@@ -268,6 +268,10 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url("../img/slide-bg-devices.png");
 }
 
+.slider__show {
+  display: block;
+}
+
 .slider__column-wrapper {
   width: 515px;
   padding-top: 67px;
@@ -590,6 +594,18 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 }
 
+.contacts__map {
+  position: relative;
+  z-index: 2;
+}
+
+.contacts__map_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .contacts__wrapper {
   padding-left: calc((100% - 1160px)/2);
   padding-right: calc((100% - 1160px)/2);
@@ -599,6 +615,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 50px;
   left: 50px;
+  z-index: 2;
 
   width: 320px;
   padding: 50px;
@@ -899,21 +916,21 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url(../img/svg/checkbox-off.svg);
 }
 
-.selector__input:not(:disabled):hover + .selector__label::before,
-.selector__input:not(:disabled):focus + .selector__label::before {
+.selector__input:not(:disabled):hover+.selector__label::before,
+.selector__input:not(:disabled):focus+.selector__label::before {
   opacity: 1;
 }
 
 /* Состояния для радиокнопки и чекбокса */
-.selector__input:checked + .selector__label_radio::before {
+.selector__input:checked+.selector__label_radio::before {
   background-image: url(../img/svg/radio-on.svg);
 }
 
-.selector__input:checked + .selector__label_checkbox::before {
+.selector__input:checked+.selector__label_checkbox::before {
   background-image: url(../img/svg/checkbox-on.svg);
 }
 
-.selector__input:disabled + .selector__label::before {
+.selector__input:disabled+.selector__label::before {
   opacity: 0.1;
 }
 
@@ -934,23 +951,35 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .sorting__name {
   margin: 0;
-  margin-right: 267px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .sorting__list {
-  width: 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.sorting__item {
+  margin-right: 25px;
+}
+
+.sorting__item:last-child {
+  margin-right: 0;
+}
+
+.sorting__item_direction {
+  margin-right: 18px;
 }
 
 .sorting__link {
@@ -972,22 +1001,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sorting__direction {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 40px;
-  margin-left: auto;
 }
 
 .link-direction {
   display: block;
+  width: 12px;
+  height: 14px;
 
-  border-right: 5.5px solid transparent;
-  border-top: 10px solid black;
-  border-left: 5.5px solid transparent;
+  background-image: url(../img/svg/icon-down-dir.svg);
+  background-repeat: no-repeat;
 }
 
-.link-direction_down {
-  transform: rotate(180deg);
+.link-direction_up {
+  background-image: url(../img/svg/icon-up-dir.svg);
 }
 
 .catalog__list {
@@ -1131,7 +1158,50 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-/* Modal */
+/* Модальное окно */
+/* Анимация для открытия модального окна */
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Анимация при незаполненных полях формы */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   top: 150px;
@@ -1151,6 +1221,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .modal__show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal__error {
+  animation: shake 0.6s;
 }
 
 .write__label {
