@@ -140,7 +140,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Header */
 .header {
-  min-width: 1160px;
+  min-width: 1200px;
 
   background-color: #eee;
 }
@@ -240,9 +240,9 @@ input[type=number]::-webkit-outer-spin-button {
 /* Main */
 /* Slider */
 .main__slider {
-  min-width: 1160px;
-  padding-left: calc((100% - 1160px)/2);
-  padding-right: calc((100% - 1160px)/2);
+  min-width: 1200px;
+  padding-left: calc((100% - 1200px)/2);
+  padding-right: calc((100% - 1200px)/2);
 }
 
 .slider {
@@ -584,7 +584,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Contacts */
 .main__contacts {
-  min-width: 1160px;
+  min-width: 1200px;
   margin-top: 80px;
 }
 
@@ -609,8 +609,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__wrapper {
-  padding-left: calc((100% - 1160px)/2);
-  padding-right: calc((100% - 1160px)/2);
+  padding-left: calc((100% - 1200px)/2);
+  padding-right: calc((100% - 1200px)/2);
 }
 
 .contacts__info {
@@ -748,7 +748,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Страница «МАГАЗИН» */
 /* Title */
 .main__title {
-  min-width: 1160px;
+  min-width: 1200px;
   margin: 0;
   padding: 72px 0 108px 0;
   background-color: #eee;
