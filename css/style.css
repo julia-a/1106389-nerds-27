@@ -366,35 +366,47 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services__item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services__item {
   position: relative;
 
   width: 300px;
   margin-right: 100px;
-  padding-top: 147px;
-
-  background-repeat: no-repeat;
+  padding-top: 146px;
 }
 
 .services__item::before {
   content: "";
 
   position: absolute;
+  top: 0;
+  left: 0;
 
   width: 300px;
   height: 146px;
+
+  background-repeat: no-repeat;
 }
 
-.services__item_web {
+.services__item_web::before {
+  background-color: #fb565a;
   background-image: url("../img/illustration-1.jpg");
 }
 
-.services__item_app {
+.services__item_app::before {
+  background-color: #00ca74;
   background-image: url("../img/illustration-2.jpg");
 }
 
 .services__item_ppt {
   margin-right: 0;
+}
 
+.services__item_ppt::before {
+  background-color: #efc84a;
   background-image: url("../img/illustration-3.jpg");
 }
 
