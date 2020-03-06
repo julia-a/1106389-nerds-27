@@ -311,7 +311,7 @@ a {
 
   width: 18px;
   height: 18px;
-  margin-right: 16px;
+  margin-right: 12px;
 
   background-color: white;
   border: none;
@@ -433,7 +433,7 @@ a {
 }
 
 .about__info {
-  width: 650px;
+  width: 680px;
   margin-right: auto;
 }
 
@@ -706,7 +706,7 @@ a {
 
 /* Footer */
 .footer__socials {
-  margin: 60px 0;
+  margin: 65px 0;
 }
 
 .socials {
@@ -732,7 +732,7 @@ a {
 
 .socials__text {
   margin: 0;
-  margin-top: 10px;
+  margin-top: -20px;
 
   font-size: 36px;
   font-weight: 700;
