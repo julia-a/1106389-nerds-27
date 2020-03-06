@@ -40,16 +40,19 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .reset-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -57,12 +60,14 @@ a {
 .button {
   display: inline-block;
   padding: 16px 54px;
+
   font-weight: 500;
   line-height: 18px;
   vertical-align: middle;
   text-align: center;
   color: white;
   text-transform: uppercase;
+
   background-color: #fb565a;
   border: none;
   border-radius: 4px;
@@ -76,9 +81,10 @@ a {
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
   -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d7373b;
 }
 
 .button_green {
@@ -109,6 +115,7 @@ a {
 
 .button_grey {
   color: black;
+
   background-color: #eee;
 }
 
@@ -119,29 +126,8 @@ a {
 
 .button_grey:active {
   color: rgba(0, 0, 0, 0.3);
+
   background-color: #d5d5d5;
-}
-
-/* Убирает стрелки у input type="number" */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input[type="number"]:hover,
-input[type="number"]:focus {
-  -moz-appearance: number-input;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 /* end of layout settings */
@@ -200,6 +186,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Состояния ссылок для main-menu и user-menu  */
 .menu__link {
   position: relative;
+
   display: block;
   padding: 12px 23px;
 
@@ -219,6 +206,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .menu__link_current::after {
   content: "";
+
   position: absolute;
   right: 23px;
   bottom: 6px;
@@ -238,13 +226,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .menu__link_cart::before {
   content: "";
+
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -7.5px;
 
   width: 15px;
   height: 15px;
+  margin-top: -7.5px;
 
   background-image: url("../img/svg/cart-icon.svg");
   background-repeat: no-repeat;
@@ -302,6 +291,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .slider__text {
   margin: 26px 0 0 0;
+
   line-height: 1.5;
   color: #283136;
 }
@@ -318,6 +308,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .slider__control {
   position: relative;
+
   width: 18px;
   height: 18px;
   margin-right: 16px;
@@ -337,22 +328,21 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 
   width: 8px;
   height: 8px;
 
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Services */
 .main__services {
-
   margin-top: 80px;
-  padding-bottom: 80px;
 
   border-bottom: 2px solid #eee;
 }
@@ -370,7 +360,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   width: 300px;
   margin-right: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   padding-top: 146px;
 }
 
@@ -414,8 +404,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services__text {
-  padding-right: 25px;
   margin-top: -6px;
+  padding-right: 25px;
 
   line-height: 1.5;
   color: #283136;
@@ -499,20 +489,20 @@ input[type=number]::-webkit-outer-spin-button {
 .statistics__title {
   margin: 30px 0 0 0;
 
-  text-align: center;
   font-weight: 700;
   line-height: 1.5;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .statistics__list {
-  margin-top: -12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: -12px;
 }
 
 .statistics__item {
@@ -525,6 +515,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .statistics__heading {
   margin-top: 10px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -534,6 +525,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .statistics__desc {
   margin: 45px 0 0 0;
+
   font-size: 45px;
   font-weight: 700;
   text-align: left;
@@ -567,30 +559,32 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .partners__item {
-  width: 25%;
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
+  width: 25%;
 }
 
 .partners__item::after {
   content: "";
-  top: 42%;
-  left: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
 
   position: absolute;
+  top: 42%;
+  left: 0;
 
   width: 2px;
   height: 52px;
 
   background-color: #eee;
+
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .partners__item:first-child::after {
@@ -681,6 +675,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts__title {
   margin-top: 7px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -688,6 +683,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__address {
+  width: 205px;
   margin: 25px 0 0 0;
 }
 
@@ -703,7 +699,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__button {
-  margin-top: 20px;
+  margin-top: 22px;
   padding-left: 44px;
   padding-right: 44px;
 }
@@ -737,6 +733,7 @@ input[type=number]::-webkit-outer-spin-button {
 .socials__text {
   margin: 0;
   margin-top: 10px;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
@@ -745,6 +742,7 @@ input[type=number]::-webkit-outer-spin-button {
 .socials__desc {
   margin-top: 10px;
   margin-bottom: 10px;
+
   line-height: 22px;
   color: #444444;
 }
@@ -775,11 +773,12 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   top: 50%;
   left: 50%;
+
+  background-repeat: no-repeat;
+
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-  background-repeat: no-repeat;
 }
 
 .socials__link:active::after {
@@ -919,11 +918,11 @@ input[type=number]::-webkit-outer-spin-button {
   width: 20px;
   height: 20px;
 
-  border: 8px solid #ffffff;
   background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
   box-shadow: 0 2px 1px 0 #cfcfcf;
-  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -946,9 +945,9 @@ input[type=number]::-webkit-outer-spin-button {
 .controls__label {
   display: inline-block;
   width: 50%;
-  vertical-align: middle;
 
   font-size: 16px;
+  vertical-align: middle;
 }
 
 .controls__label:last-child {
@@ -957,24 +956,48 @@ input[type=number]::-webkit-outer-spin-button {
 
 .controls__input {
   width: 80px;
-  padding: 10px 5px;
   margin-left: 10px;
+  padding: 10px 5px;
 
   font-size: 16px;
   text-align: center;
 
+  background-color: #f1f1f1;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+}
+
+/* Убирает стрелки у .controls__input type="number" */
+.controls__input[type="number"]::-webkit-outer-spin-button,
+.controls__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.controls__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.controls__input[type="number"]:hover,
+.controls__input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.controls__input[type="number"]::-webkit-inner-spin-button,
+.controls__input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .selection__list {
   margin-top: 20px;
+
   color: #283136;
 }
 
 .selector__label {
   position: relative;
+
   display: block;
   margin-bottom: 20px;
   padding-left: 35px;
@@ -982,6 +1005,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .selector__label::before {
   content: "";
+
   position: absolute;
   top: -3px;
 
@@ -1046,6 +1070,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sorting__name {
   margin: 0;
+
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1156,6 +1181,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .catalog__img {
   padding-top: 40px;
+
   vertical-align: bottom;
 }
 
@@ -1381,6 +1407,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   top: 150px;
   left: 50%;
+  z-index: 2;
 
   display: none;
   width: 960px;
@@ -1393,7 +1420,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: white;
   -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  z-index: 2;
 }
 
 .modal__show {
@@ -1425,6 +1451,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .write__textarea {
   min-height: 118px;
+
   resize: vertical;
 }
 
@@ -1446,6 +1473,7 @@ input[type=number]::-webkit-outer-spin-button {
 .write textarea {
   width: 100%;
   padding: 14px;
+  
   font: inherit;
   font-weight: 400;
 
