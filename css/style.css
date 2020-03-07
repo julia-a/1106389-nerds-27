@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.42;
-  font-family: "Roboto", Tahoma, sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   color: black;
 }
 
@@ -342,9 +342,22 @@ a {
 
 /* Services */
 .main__services {
-  margin-top: 80px;
+  position: relative;
 
-  border-bottom: 2px solid #eee;
+  margin-top: 80px;
+}
+
+.main__services::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eee;
 }
 
 .services__list {
@@ -419,7 +432,7 @@ a {
 
 /* About */
 .main__about {
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 50px;
 }
 
@@ -451,7 +464,7 @@ a {
 }
 
 .about__subtitle {
-  margin: 35px 0 25px 0;
+  margin: 36px 0 25px 0;
 
   font-size: 16px;
   font-weight: 700;
@@ -537,11 +550,36 @@ a {
 
 /* Partners */
 .main__partners {
-  padding-top: 48px;
-  padding-bottom: 37px;
+  position: relative;
+  
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
 
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
+.main__partners::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eee;
+}
+
+.main__partners::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eee;
 }
 
 .partners__list {
@@ -613,27 +651,26 @@ a {
 }
 
 .partners__link_academy {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: -30px;
 }
 
 .partners__link_borodinski {
-  margin-top: -3px;
   margin-left: -10px;
 }
 
 .partners__link_pink {
-  margin-top: -5px;
   margin-left: 10px;
 }
 
 .partners__link_mishka {
+  margin-top: 5px;
   margin-left: 32px;
 }
 
 /* Contacts */
 .main__contacts {
-  margin-top: 80px;
+  margin-top: 75px;
 }
 
 .main__contacts_margin {
@@ -1473,7 +1510,7 @@ a {
 .write textarea {
   width: 100%;
   padding: 14px;
-  
+
   font: inherit;
   font-weight: 400;
 
